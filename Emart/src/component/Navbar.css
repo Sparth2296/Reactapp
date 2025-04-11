@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    box-sizing: border-box !important;
+}
+.main-nav{
+    background: #212529;
+}
+.logo{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sreach{
+    outline: none;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #0B5ED7;
+    width: 250px;
+    height: 40px;
+}
+.sreachbtn{
+    height: 40px;
+    border-radius: 0px 5px 5px 0px !important;
+    
+}
+.singup{
+    width: 180px;
+    height: 40px;
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center;
+}
+#singbtn{
+    width: 80px !important;   
+}
+.btn{
+    height: 40px;
+    border-radius: 5px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    background-color: #0B5ED7;
+}
+.ulMEnu{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+
+.page-manu{
+    width: 85.37%;
+    padding: 15px 0px;
+    height: auto;
+    position: absolute;
+    top: 142px;
+    left: 110.1px;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    visibility: hidden;
+    transform:rotateX(75deg);
+    transition: all 0.3s ease;
+    opacity: 0;
+
+}
+.page:hover~.page-manu{
+    transform:rotateX(0deg);
+    transition: all 0.3s ease;
+    visibility: inherit;
+    opacity: 1;
+}
+.page-manu:hover{
+    opacity: 1;
+    transform:rotateX(0deg);
+    transition: all 0.3s ease;
+    visibility: inherit;
+}
+.image-list{
+    width: 200px;
+    display: flex;justify-content: center;
+    align-items: center;
+}
+.page-manu li strong{
+    color: #000000;
+    margin: 10px;
+    height: 50px;
+
+}
+.page-manu li strong:hover{
+    color: #0B5ED7;
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+}
+.page-manu li ul{
+    height: 85%;
+    border-left: 1px solid rgb(170, 170, 170);
+}
+.page-manu li ul li a{
+    color: #000000;
+    height: 50px;
+    transition: all 0.3s ease;
+    text-wrap: no-wrap;
+}
+.page-manu li ul li a:hover{
+    transform: translateX(10px);
+    transition: all 0.3s ease;
+    color: #0B5ED7;
+}
+.image-list img{
+    width: auto;
+    height: 180px;
+}
+/* Media Query for smalll screen leptop */
+@media (max-width : 1025px) {
+    .page-manu{
+        left: 10px;
+        width: 98%;
+    }
+    .image-list img{
+        height: 150px;
+    }
+}
+/* media ouery for teblet  */
+@media(max-width : 769px) {
+    .sreach{
+    width: 200px;
+    }
+    .logo h1{
+        font-size: 1.5rem;
+    }
+    .logo h4{
+        font-size: 1rem;
+    }
+    .image-list img{
+        height: 120px;
+        margin: 25px 0px;
+    }
+}
+/* media query for mobile ... */
+@media (max-width: 426px) {
+    .sreach{
+        display: none;
+    }
+    
+}
